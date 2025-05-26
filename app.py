@@ -137,12 +137,4 @@ st.markdown("**🌟 Carteira com Maior Sharpe:**")
 df_sharpe = pd.DataFrame(max_sharpe_weights, index=tickers, columns=["Peso (%)"]).round(4) * 100
 df_sharpe.loc["Retorno Esperado da Carteira"] = [sharpe_ret * 100]
 st.dataframe(df_sharpe)
-```
 
-Este é o esqueleto completo do app no Streamlit. Ele está pronto para rodar como `app.py` ou direto com:
-
-```bash
-streamlit run app.py
-```
-
-Se quiser, posso te guiar nos próximos passos para implantar, customizar layout ou exportar os resultados. Vamos nessa?
